@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link rel="shortcut icon" href="img/mclogo_16x16.png">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="container_contactanos">
+    <header class="header">
+        <a href="index.html"><img src="img/mc_logo.png" alt="imgbanner"></a>
+        <nav>
+            <ul class="menu">
+                <li><a href="torneos.html">Torneos</a></ei>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="conocenos.html">Conocenos</a></ei>
+                <li><a href="contactanos.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="tittle">Contactanos</h1>
+    <div class="contactanos_box">
+        <form action="enviar. php" method="post" enctype="application/x-www-form-urlencoded">
+                <label for="nombre">Nombre:</label>
+                <input type="text" required>
+                <br>
+                <label for="apellido">Apellido:</label>
+                <input type="text" required>
+                <br>
+                <label for="mail">E-mail:</label>
+                <input type="mail" required>
+                <br>
+                <label for="pronomtt">Pronombre:</label>
+                <input type="radio" name="pronombre">
+                <label for="sexo">Él</label>
+                <input type="radio" name="pronombre">
+                <label for="sexo">Ella</label>
+                <br>
+                <label for="motivo de consulta">Motivo:</label>
+                <select name="motivo" id="motivo">
+                    <option value="c">Cursos</option>
+                    <option value="t">Torneos</option>
+                    <option value="o">Reclamo/Consulta</option>
+                </select>
+                <br>
+                <textarea name="comentarios" id="" cols="25" rows="20" placeholder="ingresa aquí tu pedido/reclamo/consulta..."></textarea>
+                <br>
+                <input type="submit" value="enviar">
+                <input type="reset" value="restablecer">
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="footer_redes">
+            <a href="index.html"><img src="img/mc_banner.png" alt="logomc"></a>
+            <a href="https://www.facebook.com" target="blank_"><img src="https://icongr.am/fontawesome/facebook-square.svg?size=30&color=currentColor" alt="facebook"></a>
+            <a href="https://www.instagram.com"><img src="https://icongr.am/fontawesome/instagram.svg?size=30&color=currentColor" alt="instagram"></a>
+            <a href="https://www.twitter.com"><img src="https://icongr.am/fontawesome/twitter-square.svg?size=30&color=currentColor" alt="twitter"></a>
+        </div>
+        <p>Sitio web creado por Agustín Taborda</p>
+    </footer>
+</body>
+</html>
