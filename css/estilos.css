@@ -218,9 +218,6 @@ footer p{
     "torneo_section torneo_section torneo_section torneo_section"
     "torneo_section torneo_section torneo_section torneo_section"
     "footer footer footer footer";
-    background-image: url(../img/mc_background.jpg);
-    background-position: center;
-    background-size: cover;
 }
 
 .torneo_section { 
