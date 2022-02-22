@@ -11,9 +11,9 @@
 </head>
 <body>
     <!-- nav bar -->
-    <nav class="navbar navbar-expand-lg bg-danger bg-gradient navbar-dark">
+    <nav class="navbar navbar-expand-lg bg-dark bg-gradient navbar-dark">
         <div class="container">
-            <a href="index.html" class="navbar-brand"><img src="/img/mclogo32x32.png" alt="masterchess logo"> Masterchess <span class="text-dark">Academy</span></a>
+            <a href="index.html" class="navbar-brand"><img src="/img/mclogo32x32.png" alt="masterchess logo"> Masterchess <span class="text-warning">Academy</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -39,15 +39,15 @@
         </div>
     </nav>
     <!-- tittle banner-->
-    <section class="bg-danger bg-gradient text-light text-center p-3">
+    <section class="bg-dark bg-gradient text-light text-center p-3">
         <h1 class="tittle">Contactanos</h1>
     </section>
 <!-- contactanos form -->
-<div class="container p-5 my-5 bg-danger bg-gradient rounded">
+<div class="container p-5 my-5 bg-dark bg-gradient rounded">
     <form id="contactForm" data-sb-form-api-token="API_TOKEN">
         <div class="form-floating mb-3">
             <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-            <label for="emailAddress">Email Address</label>
+            <label for="emailAddress">Correo electrónico</label>
             <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
             <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
         </div>
@@ -62,14 +62,18 @@
             <div class="invalid-feedback" data-sb-feedback="apellido:required">Apellido is required.</div>
         </div>
         <div class="mb-3">
-            <label class="form-label d-block">Genero</label>
+            <label class="form-label d-block text-light">Genero</label>
             <div class="form-check form-check-inline">
                 <input class="form-check-input" id="hombre" type="radio" name="genero" data-sb-validations="" />
-                <label class="form-check-label" for="hombre">Hombre</label>
+                <label class="form-check-label text-light" for="hombre">Hombre</label>
             </div>
             <div class="form-check form-check-inline">
                 <input class="form-check-input" id="mujer" type="radio" name="genero" data-sb-validations="" />
-                <label class="form-check-label" for="mujer">Mujer</label>
+                <label class="form-check-label text-light" for="mujer">Mujer</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" id="mujer" type="radio" name="genero" data-sb-validations="" />
+                <label class="form-check-label text-light" for="Otros">Otros</label>
             </div>
         </div>
         <div class="form-floating mb-3">
@@ -97,12 +101,12 @@
             <div class="text-center text-danger mb-3">Error sending message!</div>
         </div>
         <div class="d-grid">
-            <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+            <button class="btn btn-primary btn-lg disabled bg-warning text-light" id="submitButton" type="submit">Submit</button>
         </div>
     </form>
 </div>
     <!-- footer -->
-    <footer class="p-1 bg-danger bg-gradient">
+    <footer class="p-1 bg-dark bg-gradient">
         <div class="d-flex flex-wrap justify-content-between align-items-center p-3">
             <a href="index.html"><img src="img/mc_banner.png" alt="logomc"></a>
             <a href="https://www.facebook.com" target="blank_">
@@ -115,7 +119,7 @@
                 <img src="https://icongr.am/fontawesome/twitter-square.svg?size=30&color=currentColor" alt="twitter">
             </a>
         </div>
-        <p class="text-center">Sitio web creado por Agustín Taborda</p>
+        <p class="text-center text-light">Sitio web creado por Agustín Taborda</p>
     </footer>
     <!-- cdn bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
