@@ -253,18 +253,7 @@ main {
     
     .bootcamp2 {
         grid-area: bootcamp2;
-        backdrop-filter: blur(16px) saturate(180%);
-        -webkit-backdrop-filter: blur(16px) saturate(180%);
-        background-color: $bg-dark;
-        border-radius: 12px;
-        border: 1px solid rgba(255, 255, 255, 0.125);
-        margin: 2rem;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: column;
-        padding:1rem;
-        color: $bg-light;
+        @extend .bootcamp1
     }
     
     .subscribe {
@@ -343,13 +332,18 @@ main {
         }
     }
     /* main conocenos */
+    $estilos: (
+        col: column,
+        medio: center,
+        dos: 2rem
+    );
     .conocenos_box {
         grid-area: conocenos_box;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 2rem;
+        flex-direction: map-get($estilos, col);
+        justify-content: map-get($estilos, medio);
+        align-items: map-get($estilos, medio);
+        margin: map-get($estilos, dos);
         .conocenos_text{
             backdrop-filter: blur(16px) saturate(180%);
             -webkit-backdrop-filter: blur(16px) saturate(180%);
@@ -365,14 +359,18 @@ main {
     }
 }
 
+@mixin flex-spabet-center-column {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
 footer { 
     grid-area: footer;
     background: $bg-dimdark;
     .footer_redes{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
+        @include flex-spabet-center-column;
     }
     p{
         display: flex;
