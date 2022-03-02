@@ -3,7 +3,7 @@
 $bg-dark: #24243dd8;
 $bg-gold: #edae49;
 $bg-light: antiquewhite;
-$bg-dimdark: #86a59ce5;
+$bg-dimdark: #4c5c68dc;
 
 *{
     font-family: 'Montserrat', sans-serif;
@@ -98,7 +98,7 @@ header{
 
 body{
     margin: 0;
-    background-image: url(/img/mc_background.jpg);
+    background-image: url(../img/mc_background.jpg);
     height: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -108,7 +108,8 @@ body{
 
 /* grid layout inicio */
 
-.container_inicio {  display: grid;
+.container_inicio {  
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 3fr 1fr;
     grid-auto-columns: 1fr;
@@ -123,9 +124,10 @@ body{
 
 /* grid layout cursos */
 
-.container_cursos {  display: grid;
+.container_cursos {  
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
     gap: 0px 0px;
@@ -138,7 +140,8 @@ body{
 
 /* grid layout torneos */
 
-.container_torneos {  display: grid;
+.container_torneos {  
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 7fr 1fr;
     grid-auto-columns: 1fr;
@@ -153,9 +156,10 @@ body{
 
 /* grid layout conocenos */
 
-.container_conocenos {  display: grid;
+.container_conocenos {  
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 7fr 1fr;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
     gap: 0px 0px;
@@ -168,9 +172,10 @@ body{
 
 /* grid layout contactanos */
 
-.container_contactanos {  display: grid;
+.container_contactanos {  
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
     gap: 0px 0px;
@@ -203,7 +208,7 @@ main {
             border-radius: 12px;
             border: 1px solid rgba(255, 255, 255, 0.125);
             text-decoration: none;
-            color: black;
+            color: $bg-light;
             padding: 1rem;
             transition: transform 0.8s;
         }
@@ -219,6 +224,7 @@ main {
         -webkit-backdrop-filter: blur(16px) saturate(180%);
         background-color: $bg-dark;
         border-radius: 12px;
+        color: $bg-light;
         border: 1px solid rgba(255, 255, 255, 0.125);
         display: flex;
         justify-content: flex-start;
@@ -281,24 +287,45 @@ main {
     }
     /* main torneos */
     .torneo_section { 
-        grid-area: torneo_section;
-        display: flex;
-        justify-content: center;
-        flex-flow: wrap;
+        display: grid;
+        place-items: center center;
+        gap: 20px;
         .torneo_box{
             font-size: x-large;
             color: $bg-light;
             backdrop-filter: blur(16px) saturate(180%);
             -webkit-backdrop-filter: blur(16px) saturate(180%);
             background-color: $bg-dark;
-            border-radius: 12px;
+            border-radius: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
             border: 1px solid rgba(255, 255, 255, 0.125);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            box-shadow: 0 0 30px rgba(0,0,0,0.18);
+            display: grid;
             padding: 20px;
-            margin: 100px;
+            gap: 30px;
+            .torneo_img_container{
+                position: relative;
+                clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
+                img{
+                    width: 100%;
+                    display: block;
+                    border-radius: 20px 20px 0 0;
+                }
+            }
+            .torneo_detalles{
+                padding: 20px 10px;
+                h3{
+                    color: $bg-gold;
+                    font-weight: 600;
+                    font-size: 18px;
+                    margin: 10px 0 15 px 0;
+                }
+                p{
+                    font-size: 15px;
+                    line-height: 30px;
+                    font-weight: 400;
+                }
+            }
             .torneo_a{
                 text-decoration: none;
                 color: $bg-light;
@@ -351,7 +378,6 @@ footer {
         justify-content: center;
     }
 }
-
 
 @media screen and (min-width: 1024px){
     header{
@@ -413,6 +439,7 @@ footer {
         .subscribe{
             margin-top: 4rem;
         }
+
         .conocenos_box{
             flex-direction: row;
             justify-content: space-around;
@@ -430,9 +457,17 @@ footer {
             }
         }
     }
+    /* fix grid mobile */
+    .container_cursos{
+        grid-template-rows: 1fr 3fr 1fr;
+    }
+    .container_torneos{
+        grid-template-rows: 1fr 7fr 1fr;
+    }
     .container_conocenos{
         grid-template-rows: 1fr 5fr 1fr;
     }
+
     footer{
         padding: 2rem;
         .footer_redes{  
