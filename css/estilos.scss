@@ -1,5 +1,6 @@
+/* font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
+/* variables colores */
 $bg-dark: #24243dd8;
 $bg-gold: #edae49;
 $bg-light: antiquewhite;
@@ -272,10 +273,10 @@ main {
         justify-content: space-around;
         align-items: center;
         font-size: x-large;
-        text-shadow: 2px 2px $bg-light;
+        text-shadow: 2px 2px $bg-gold;
         a{
             text-decoration: none;
-            color: black;
+            color: $bg-light;
             padding: 1rem;
             transition: transform 0.8s;
         }

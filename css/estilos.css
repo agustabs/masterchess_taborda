@@ -1,4 +1,6 @@
+/* font */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/* variables colores */
 * {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -352,12 +354,12 @@ main .subscribe {
       -ms-flex-align: center;
           align-items: center;
   font-size: x-large;
-  text-shadow: 2px 2px antiquewhite;
+  text-shadow: 2px 2px #edae49;
 }
 
 main .subscribe a {
   text-decoration: none;
-  color: black;
+  color: antiquewhite;
   padding: 1rem;
   -webkit-transition: -webkit-transform 0.8s;
   transition: -webkit-transform 0.8s;
