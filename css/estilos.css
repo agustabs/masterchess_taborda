@@ -367,8 +367,8 @@ main .torneo_section .torneo_box {
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: #24243dd8;
   border-radius: 20px;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   border: 1px solid rgba(255, 255, 255, 0.125);
   -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
           box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
@@ -492,6 +492,13 @@ footer p {
           justify-content: center;
 }
 
+@media screen and (max-width: 400px) {
+  main .conocenos_box {
+    margin: 0;
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   header {
     display: -ms-grid;
@@ -595,11 +602,11 @@ footer p {
   main .conocenos_box .conocenos_text {
     height: 500px;
     width: 500px;
-    text-align: center;
+    text-align: justify;
   }
   main .conocenos_box iframe {
-    height: 500px;
-    width: 500px;
+    height: 550px;
+    width: 550px;
   }
   main .torneo_section {
     display: -ms-grid;
