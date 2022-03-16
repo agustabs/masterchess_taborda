@@ -1,46 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap");
 /* font-family: 'Sora', sans-serif; */
 
-*{
-    font-family: 'Sora', sans-serif;
+* {
+  font-family: "Sora", sans-serif;
 }
 
-*::selection{
-    background-color: brown;
-    color: antiquewhite;
+*::selection {
+  background-color: brown;
+  color: antiquewhite;
 }
 
 body {
-    background-image: url(../img/mc_background.jpg);
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(../img/mc_background.jpg);
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.cursos_btn{
-    transition: transform 0.8s;
+.cursos_btn {
+  transition: transform 0.8s;
 }
 
-.cursos_btn:hover{
-    transform: scale(1.2);
+.cursos_btn:hover {
+  transform: scale(1.2);
 }
 
-.anotate_btn{
-    transition: 0.8s;
+.anotate_btn {
+  transition: 0.8s;
 }
 
-.anotate_btn:hover{
-    transform: rotate(360deg);
+.anotate_btn:hover {
+  transform: rotate(360deg);
 }
 
-.inscribite_btn{
-    transition: 0.8s;
+.inscribite_btn {
+  transition: 0.8s;
 }
 
-.inscribite_btn:hover{
-    transform: scale(1.1);
+.inscribite_btn:hover {
+  transform: scale(1.1);
 }
 
 /* @media only screen and (min-width: 769px){
@@ -50,4 +50,3 @@ body {
         width: 100%;
     }
 } */
-
